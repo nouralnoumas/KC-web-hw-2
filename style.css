@@ -1,0 +1,107 @@
+
+ .banner {
+   
+   background-image: url(./background.png)
+   no-repeat center center fixed;
+    
+    
+        }
+         .navbar  {
+            width: 85%;
+            margin: auto;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+         }
+
+        body{
+         
+            margin: 0%;
+             width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)), url(./background.png)
+    no-repeat center center fixed;
+   background-size: cover;
+    -webkit-background-size : cover ;
+    -moz-background-size : cover ;
+    -o-background-size: cover;
+    
+          }
+
+        .logo {
+           
+        width: 150px;
+        cursor: pointer;
+           }
+           .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+           }
+     .navbar ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        text-transform: uppercase;
+     }      
+
+     .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rgb(103, 0, 0);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+     }
+     .navbar ul li:hover::after{
+        width: 100%;
+     }
+     .box {
+        width:  200px;  
+        height: 300px;   
+        margin: 10px; 
+        padding: 10px; 
+        flex-direction: column;  
+        align-items: center; 
+        display: flex;
+        border-radius: 10%;
+        background-color: rgb(20, 21, 27);
+        border-color: black;
+        color: aliceblue;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 8px 10px #ff525210;
+           }
+     .container {
+       display: flex;
+       position: relative;
+       flex-wrap: wrap;
+     }
+   h1 {
+      color: aliceblue;
+   }
+   
+
+   #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: rgb(104, 0, 0); /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 10px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+    }
+    
+    #myBtn:hover {
+      background-color: #555; /* Add a dark-grey background on hover */
+    }
